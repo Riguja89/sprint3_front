@@ -15,7 +15,7 @@
     <div class="footer" id="footer"> 
       <h2>Misión TIC 2022</h2>
       <H5>Datos de contacto: <br>
-      Mail: misiontic202@mail.com <br>
+      Mail: misiontic2020@mail.com <br>
       Tel: (+57) 031-5555
       </H5>
     </div>
@@ -62,7 +62,8 @@ this.$router.push({ name: "mostrar"});
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2d2e99;
-
+  justify-content: center;
+  justify-items: center;
 }
 #header{
   background-color: darkseagreen;
@@ -75,7 +76,9 @@ nav{
   text-align: right;
 }
 #main{
-height: 400px;
+height: 80%;
+justify-content: center;
+
 }
 #titulo_principal{
   padding-top: 20px;

@@ -16,6 +16,7 @@
     </form>
     <br>
     <button v-on:click="crearTemp2">Crear Temporada</button>
+    <P>{{mensaje}}</P>
   </div>
 </template>
 <script>
@@ -24,7 +25,7 @@ export default {
   name: "crear",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
+      mensaje: " ",
     };
   },
   methods: {
@@ -39,10 +40,11 @@ axios.post('https://santi-hpsm.herokuapp.com/Temporada/crear/', {
 })
 .then((response) => {
   console.log(response);
+   this.mensaje = "Festividad agregada Correctamente";
 }, (error) => {
   console.log(error);
+  this.mensaje = "Error en la creacion";
 });
-
     },
   },
 };
@@ -52,6 +54,5 @@ axios.post('https://santi-hpsm.herokuapp.com/Temporada/crear/', {
 margin-top: 30px;
 text-align: justify;
 margin-left: 500px;
-
 }
 </style>
